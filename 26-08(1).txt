@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char str[100];
+	int i,c1=0,c2=0,c3=0;
+	printf("enter the string");
+	gets(str);
+	for(i=0;str[i]!='\0';i++)
+	{
+		if(isupper(str[i]))
+		{
+		   c1++;
+	    }
+		if(islower(str[i]))
+		{
+		   c2++;
+	    } 
+		if(isdigit(str[i]))
+		{
+			c3++;
+		}
+		 
+	}
+	printf("%d\n%d\n%d\n",c1,c2,c3);
+}
