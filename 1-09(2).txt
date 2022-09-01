@@ -1,0 +1,16 @@
+#include<stdio.h>
+int fact(m);
+void main()
+{
+	int c,f;
+	scanf("%d",&c);
+	f=fact(c);
+	printf(" fact is:%d",f);
+}
+int fact(int v)
+{
+	if(v==1)
+	  return 1;
+	else
+	  return v*fact(v-1);
+}

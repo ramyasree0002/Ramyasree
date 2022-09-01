@@ -1,0 +1,19 @@
+#include<stdio.h>
+int num(x);
+void main()
+{
+	int x,n;
+	scanf("%d",&x);
+	n=num(x);
+	if(n==0)
+	  printf("even");
+	else
+	  printf("odd");
+}
+int num(int x)
+{
+	if(x%2==0)
+	  return 0;
+	else
+	   return 1;
+}
